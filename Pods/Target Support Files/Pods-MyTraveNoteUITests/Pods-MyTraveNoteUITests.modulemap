@@ -1,0 +1,6 @@
+framework module Pods_MyTraveNoteUITests {
+  umbrella header "Pods-MyTraveNoteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
