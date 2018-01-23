@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AEA3A91712BC1A9313402C0 /* Pods_MyTraveNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53637E0D726AF30C7398274E /* Pods_MyTraveNote.framework */; };
+		745371F5AE06CD8C800EEE1E /* Pods_MyTraveNoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5974341BD237712E62ADF9 /* Pods_MyTraveNoteTests.framework */; };
 		7D44465D2007FC9900DA3AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44465C2007FC9900DA3AA2 /* AppDelegate.swift */; };
 		7D44465F2007FC9900DA3AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44465E2007FC9900DA3AA2 /* ViewController.swift */; };
 		7D4446622007FC9900DA3AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4446602007FC9900DA3AA2 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		7D44466A2007FC9900DA3AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4446682007FC9900DA3AA2 /* LaunchScreen.storyboard */; };
 		7D4446752007FC9A00DA3AA2 /* MyTraveNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4446742007FC9A00DA3AA2 /* MyTraveNoteTests.swift */; };
 		7D4446802007FC9A00DA3AA2 /* MyTraveNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44467F2007FC9A00DA3AA2 /* MyTraveNoteUITests.swift */; };
+		7D5609D32009602300DEE61A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D5609D22009602300DEE61A /* GoogleService-Info.plist */; };
+		CA0BD9623DA9A3CF3DC36DFD /* Pods_MyTraveNoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405684DD01711E1FD8240142 /* Pods_MyTraveNoteUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36AA1CECBDF963B1477B34D7 /* Pods-MyTraveNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTraveNoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTraveNoteTests/Pods-MyTraveNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F747061DFE7FC5555F4D4E7 /* Pods-MyTraveNoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTraveNoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTraveNoteUITests/Pods-MyTraveNoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		405684DD01711E1FD8240142 /* Pods_MyTraveNoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTraveNoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53637E0D726AF30C7398274E /* Pods_MyTraveNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTraveNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		696FA2DDC27F17F0E41C0171 /* Pods-MyTraveNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTraveNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTraveNote/Pods-MyTraveNote.debug.xcconfig"; sourceTree = "<group>"; };
 		7D4446592007FC9900DA3AA2 /* MyTraveNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTraveNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D44465C2007FC9900DA3AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D44465E2007FC9900DA3AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,11 @@
 		7D44467B2007FC9A00DA3AA2 /* MyTraveNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTraveNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D44467F2007FC9A00DA3AA2 /* MyTraveNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTraveNoteUITests.swift; sourceTree = "<group>"; };
 		7D4446812007FC9A00DA3AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D5609D22009602300DEE61A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE5974341BD237712E62ADF9 /* Pods_MyTraveNoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTraveNoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D816601B6125F612851D9754 /* Pods-MyTraveNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTraveNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTraveNote/Pods-MyTraveNote.release.xcconfig"; sourceTree = "<group>"; };
+		E4634CB439022DDE08DB3214 /* Pods-MyTraveNoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTraveNoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTraveNoteUITests/Pods-MyTraveNoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE034225D9B369C8A7D201A8 /* Pods-MyTraveNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTraveNoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTraveNoteTests/Pods-MyTraveNoteTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AEA3A91712BC1A9313402C0 /* Pods_MyTraveNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745371F5AE06CD8C800EEE1E /* Pods_MyTraveNoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0BD9623DA9A3CF3DC36DFD /* Pods_MyTraveNoteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		476ADDE3F05D1CAC384D8D8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				696FA2DDC27F17F0E41C0171 /* Pods-MyTraveNote.debug.xcconfig */,
+				D816601B6125F612851D9754 /* Pods-MyTraveNote.release.xcconfig */,
+				36AA1CECBDF963B1477B34D7 /* Pods-MyTraveNoteTests.debug.xcconfig */,
+				EE034225D9B369C8A7D201A8 /* Pods-MyTraveNoteTests.release.xcconfig */,
+				E4634CB439022DDE08DB3214 /* Pods-MyTraveNoteUITests.debug.xcconfig */,
+				3F747061DFE7FC5555F4D4E7 /* Pods-MyTraveNoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D4446502007FC9900DA3AA2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				7D4446732007FC9A00DA3AA2 /* MyTraveNoteTests */,
 				7D44467E2007FC9A00DA3AA2 /* MyTraveNoteUITests */,
 				7D44465A2007FC9900DA3AA2 /* Products */,
+				476ADDE3F05D1CAC384D8D8C /* Pods */,
+				89A1A7E784F7935B316845A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +137,7 @@
 				7D4446662007FC9900DA3AA2 /* Assets.xcassets */,
 				7D4446682007FC9900DA3AA2 /* LaunchScreen.storyboard */,
 				7D44466B2007FC9900DA3AA2 /* Info.plist */,
+				7D5609D22009602300DEE61A /* GoogleService-Info.plist */,
 				7D4446632007FC9900DA3AA2 /* MyTraveNote.xcdatamodeld */,
 			);
 			path = MyTraveNote;
@@ -128,6 +161,16 @@
 			path = MyTraveNoteUITests;
 			sourceTree = "<group>";
 		};
+		89A1A7E784F7935B316845A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53637E0D726AF30C7398274E /* Pods_MyTraveNote.framework */,
+				AE5974341BD237712E62ADF9 /* Pods_MyTraveNoteTests.framework */,
+				405684DD01711E1FD8240142 /* Pods_MyTraveNoteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D4446842007FC9A00DA3AA2 /* Build configuration list for PBXNativeTarget "MyTraveNote" */;
 			buildPhases = (
+				22175702CE2F8125C09A83E1 /* [CP] Check Pods Manifest.lock */,
 				7D4446552007FC9900DA3AA2 /* Sources */,
 				7D4446562007FC9900DA3AA2 /* Frameworks */,
 				7D4446572007FC9900DA3AA2 /* Resources */,
+				69332BA1250A869F9F285EFE /* [CP] Embed Pods Frameworks */,
+				F5C2EEE7E027FF2E3E20716B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D4446872007FC9A00DA3AA2 /* Build configuration list for PBXNativeTarget "MyTraveNoteTests" */;
 			buildPhases = (
+				041D83044C8F219986662ADC /* [CP] Check Pods Manifest.lock */,
 				7D44466C2007FC9A00DA3AA2 /* Sources */,
 				7D44466D2007FC9A00DA3AA2 /* Frameworks */,
 				7D44466E2007FC9A00DA3AA2 /* Resources */,
+				CE1BE18520537B5D1302D57D /* [CP] Embed Pods Frameworks */,
+				D6DC759D9AFC235120CC0751 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D44468A2007FC9A00DA3AA2 /* Build configuration list for PBXNativeTarget "MyTraveNoteUITests" */;
 			buildPhases = (
+				49070820C7B683EE47ED66E0 /* [CP] Check Pods Manifest.lock */,
 				7D4446772007FC9A00DA3AA2 /* Sources */,
 				7D4446782007FC9A00DA3AA2 /* Frameworks */,
 				7D4446792007FC9A00DA3AA2 /* Resources */,
+				E83FBED20E4E084EC237ED7B /* [CP] Embed Pods Frameworks */,
+				170229CEE38275C223A4A4FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D44466A2007FC9900DA3AA2 /* LaunchScreen.storyboard in Resources */,
+				7D5609D32009602300DEE61A /* GoogleService-Info.plist in Resources */,
 				7D4446672007FC9900DA3AA2 /* Assets.xcassets in Resources */,
 				7D4446622007FC9900DA3AA2 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +309,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		041D83044C8F219986662ADC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		170229CEE38275C223A4A4FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTraveNoteUITests/Pods-MyTraveNoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22175702CE2F8125C09A83E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49070820C7B683EE47ED66E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69332BA1250A869F9F285EFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTraveNote/Pods-MyTraveNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE1BE18520537B5D1302D57D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTraveNoteTests/Pods-MyTraveNoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DC759D9AFC235120CC0751 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTraveNoteTests/Pods-MyTraveNoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E83FBED20E4E084EC237ED7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTraveNoteUITests/Pods-MyTraveNoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C2EEE7E027FF2E3E20716B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTraveNote/Pods-MyTraveNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D4446552007FC9900DA3AA2 /* Sources */ = {
@@ -428,6 +619,7 @@
 		};
 		7D4446852007FC9A00DA3AA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696FA2DDC27F17F0E41C0171 /* Pods-MyTraveNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +634,7 @@
 		};
 		7D4446862007FC9A00DA3AA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D816601B6125F612851D9754 /* Pods-MyTraveNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +649,7 @@
 		};
 		7D4446882007FC9A00DA3AA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36AA1CECBDF963B1477B34D7 /* Pods-MyTraveNoteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -472,6 +666,7 @@
 		};
 		7D4446892007FC9A00DA3AA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE034225D9B369C8A7D201A8 /* Pods-MyTraveNoteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +683,7 @@
 		};
 		7D44468B2007FC9A00DA3AA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4634CB439022DDE08DB3214 /* Pods-MyTraveNoteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +699,7 @@
 		};
 		7D44468C2007FC9A00DA3AA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F747061DFE7FC5555F4D4E7 /* Pods-MyTraveNoteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
