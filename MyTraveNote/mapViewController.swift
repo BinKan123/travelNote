@@ -10,75 +10,50 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class mapViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDelegate{
+class mapViewController: UIViewController,CLLocationManagerDelegate{
 
     
     @IBOutlet weak var mapView: MKMapView!
-    var address:String = ""
-    var locationManager:CLLocationManager!
-    var myLocation: CLLocation = CLLocation(latitude: 0, longitude: 0)
+    
+    let manager = CLLocationManager()
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let location = locations[0]
+        
+        let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        mapView.setRegion(region,animated:true)
+        
+        self.mapView.showsUserLocation=true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
-        mapView.showsUserLocation = true
         
+        // Ask for Authorisation from the User.
+        manager.requestAlwaysAuthorization()
         
-        CLGeocoder().geocodeAddressString(address, completionHandler: {(placemarks, error) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            
-            if let placemarks = placemarks {
-                let placemark = placemarks[0]
-                let annotation = MKPointAnnotation()
-                
-                if let rLocation = placemark.location {
-                    self.restLocation = rLocation
-                    annotation.coordinate = self.restLocation.coordinate
-                    annotation.title = self.name
-                    
-                    let distance = self.myLocation.distance(from: self.restLocation)
-                    //                    let distString = String(format: "%.1f", distance/1000)
-                    //                    annotation.title = self.name + "\n" + distString + " km"
-                    self.mapView.addAnnotation(annotation)
-                    
-                    let region = MKCoordinateRegionMakeWithDistance(self.restLocation.coordinate, 2*distance, 2*distance)
-                    self.mapView.setRegion(region, animated: false)
-                    self.findMyLocation()
-                }
-            }
-        })
-    }
-    
-    func findMyLocation() {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        // For use in foreground
+        manager.requestWhenInUseAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
+           manager.delegate = self
+           manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+           manager.requestWhenInUseAuthorization()
+           manager.startUpdatingLocation()
+            
         }
+    
     }
-    
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let renderer = MKPolylineRenderer(overlay: overlay)
-        renderer.lineWidth = 3.0
-        renderer.strokeColor = UIColor.purple
-        renderer.alpha = 0.5
-        return renderer
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
+        
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-   
+    
 
 }

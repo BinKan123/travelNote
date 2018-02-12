@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,9 +26,20 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key></key>
+	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This is to choose a photo from the phone</string>
+	<key>NSVideoSubscriberAccountUsageDescription</key>
+	<string>This is to take a video</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This is to take a photo</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This is to show the current location</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string></string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

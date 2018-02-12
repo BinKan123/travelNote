@@ -17,6 +17,9 @@
 		7D44466A2007FC9900DA3AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4446682007FC9900DA3AA2 /* LaunchScreen.storyboard */; };
 		7D4446752007FC9A00DA3AA2 /* MyTraveNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4446742007FC9A00DA3AA2 /* MyTraveNoteTests.swift */; };
 		7D4446802007FC9A00DA3AA2 /* MyTraveNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44467F2007FC9A00DA3AA2 /* MyTraveNoteUITests.swift */; };
+		7D4C7113202C4F830075A217 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C7112202C4F830075A217 /* VideoViewController.swift */; };
+		7D4C7115202C5C780075A217 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4C7114202C5C780075A217 /* CoreLocation.framework */; };
+		7D54EED32031BA1100EB4C20 /* playVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D54EED22031BA1100EB4C20 /* playVideoViewController.swift */; };
 		7D5609D32009602300DEE61A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D5609D22009602300DEE61A /* GoogleService-Info.plist */; };
 		7DFFB378202B11B00013D7FA /* listViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFB377202B11B00013D7FA /* listViewController.swift */; };
 		7DFFB37A202B12110013D7FA /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFB379202B12110013D7FA /* createViewController.swift */; };
@@ -61,6 +64,9 @@
 		7D44467B2007FC9A00DA3AA2 /* MyTraveNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTraveNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D44467F2007FC9A00DA3AA2 /* MyTraveNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTraveNoteUITests.swift; sourceTree = "<group>"; };
 		7D4446812007FC9A00DA3AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4C7112202C4F830075A217 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		7D4C7114202C5C780075A217 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7D54EED22031BA1100EB4C20 /* playVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playVideoViewController.swift; sourceTree = "<group>"; };
 		7D5609D22009602300DEE61A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7DFFB377202B11B00013D7FA /* listViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewController.swift; sourceTree = "<group>"; };
 		7DFFB379202B12110013D7FA /* createViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4C7115202C5C780075A217 /* CoreLocation.framework in Frameworks */,
 				3AEA3A91712BC1A9313402C0 /* Pods_MyTraveNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +155,8 @@
 				7DFFB377202B11B00013D7FA /* listViewController.swift */,
 				7DFFB379202B12110013D7FA /* createViewController.swift */,
 				7DFFB37B202B3CDC0013D7FA /* mapViewController.swift */,
+				7D4C7112202C4F830075A217 /* VideoViewController.swift */,
+				7D54EED22031BA1100EB4C20 /* playVideoViewController.swift */,
 			);
 			path = MyTraveNote;
 			sourceTree = "<group>";
@@ -173,6 +182,7 @@
 		89A1A7E784F7935B316845A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D4C7114202C5C780075A217 /* CoreLocation.framework */,
 				53637E0D726AF30C7398274E /* Pods_MyTraveNote.framework */,
 				AE5974341BD237712E62ADF9 /* Pods_MyTraveNoteTests.framework */,
 				405684DD01711E1FD8240142 /* Pods_MyTraveNoteUITests.framework */,
@@ -463,8 +473,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D44465F2007FC9900DA3AA2 /* ViewController.swift in Sources */,
+				7D4C7113202C4F830075A217 /* VideoViewController.swift in Sources */,
 				7DFFB37A202B12110013D7FA /* createViewController.swift in Sources */,
 				7D4446652007FC9900DA3AA2 /* MyTraveNote.xcdatamodeld in Sources */,
+				7D54EED32031BA1100EB4C20 /* playVideoViewController.swift in Sources */,
 				7DFFB37C202B3CDC0013D7FA /* mapViewController.swift in Sources */,
 				7DFFB378202B11B00013D7FA /* listViewController.swift in Sources */,
 				7D44465D2007FC9900DA3AA2 /* AppDelegate.swift in Sources */,

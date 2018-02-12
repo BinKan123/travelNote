@@ -20,6 +20,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var signIn: UIButton!
     
     var isSignedIn:Bool = true
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    
     @IBAction func signInSelector(_ sender: UISegmentedControl) {
         //Flip the boolean
         isSignedIn = !isSignedIn
@@ -93,15 +100,5 @@ class ViewController: UIViewController {
         passwordText.resignFirstResponder()
     }
     
-
-    
-    
-    
-    
-    
-    
-    
-
-
 }
 
