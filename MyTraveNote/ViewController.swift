@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -21,10 +21,12 @@ class ViewController: UIViewController {
     
     var isSignedIn:Bool = true
     
+    var ref:DatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        ref=Database.database().reference()
     }
     
     @IBAction func signInSelector(_ sender: UISegmentedControl) {
@@ -43,8 +45,8 @@ class ViewController: UIViewController {
             //check its status
             if isSignedIn{
                 Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-                    // check is use exist
-                    if let u = user{
+                    // check if user exists
+                    if user != nil{
                         //found, to next page
                         self.performSegue(withIdentifier: "toMain", sender: self)
                     }else{
@@ -67,21 +69,32 @@ class ViewController: UIViewController {
                         
                         // show the alert
                         self.present(alert, animated: true, completion: nil)
-                    
-                        
+            
                     }
                 }
                 }
             
-            else{
+                         else{
                 //register user
                 Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-                    if let u = user{
+                    if  user != nil{
                         //found, to next page
                         self.performSegue(withIdentifier: "toMain", sender: self)
-                    }else{
-                        //not found, show error msg
+                        
+                        
+                        //add new user to Firebase
                        
+                        let userID = user?.uid
+                         self.ref?.child("user").child(userID!).setValue(["Email":email,"Password":password])
+                    }else{
+                        // show the error
+                        let alert = UIAlertController(title: "Error?", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                        
+                        let cancel = UIAlertAction(title: "Retry", style: UIAlertActionStyle.cancel, handler: nil)
+            
+                        alert.addAction(cancel)
+                        self.present(alert, animated: true, completion: nil)
+                        
                     
                 }
             }

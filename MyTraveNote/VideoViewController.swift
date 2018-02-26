@@ -27,14 +27,14 @@ class VideoViewController: UIViewController,AVCaptureFileOutputRecordingDelegate
         var discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
         
         guard let captureDevice = discoverySession.devices.first else {
-            print("Hittar inte kameran")
+            print("Camera is not found")
             return
         }
         
         discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInMicrophone], mediaType: AVMediaType.audio, position: .unspecified)
         
         guard let audioDevice = discoverySession.devices.first else {
-            print("Hittar inte miccen")
+            print("Micro is not found")
             return
         }
         
